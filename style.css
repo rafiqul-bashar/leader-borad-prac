@@ -10,6 +10,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     background: #F3F1FF;
 }
 /* Common */
@@ -33,6 +34,59 @@ hr{
     border: 1px solid #D1D1D1;
     margin-bottom: 27px;
 }
+
+/*--------------
+ header Area
+------------- */
+
+
+header{
+    background: #562EFF;
+    height: 94px;
+    width: 100%;
+    padding: 0 280px;
+}
+nav{
+    
+    height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+nav img{
+    width: 40px;
+    height: 50px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo p {
+    font-size: 28px ;
+    color: whitesmoke;
+    margin-left: 8px;
+}
+
+
+.nav-links{
+    display: flex;
+    align-items: center;
+   
+}
+
+.nav-links a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0 36px;
+}
+.nav-links img{
+    width: 51px;
+    height: 51px;
+
+}
 /* ----Top Player---- */
 .top-players{
   margin-bottom: 30px;
@@ -53,9 +107,10 @@ hr{
 .player{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .player img {
-    margin-top: 30px;
+    
     width: 56px;
     height: 56px;
 }
@@ -105,11 +160,37 @@ hr{
 /*---------------- 
 Latest Course 
 -----------------*/
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+   
+}
+
+.course{
+    width: 253px;
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    padding: 11px;
+}
 .course .course-banner img{
     width: 224px;
     height: 104px;
 }
 
+.course-tittle{
+    font-family: 'Roboto', sans-serif ;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.course-author{
+    color: #ED6B4F;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
 .course-info{
     display: flex;
     align-items: center;
@@ -126,4 +207,19 @@ Latest Course
 .fa-star.empty{
     color: #aeaeae;
     opacity: 0.25;
+}
+
+.course .rate {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color:#a2a2a2;
+    font-size: 14px;
+}
+
+.course-duration{
+    color: #FF4A60;
+    font-size: 14px;
+    background: #FFE4E8;
+border-radius: 14.6913px;
+padding: 5px;
 }
